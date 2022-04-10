@@ -1,0 +1,44 @@
+[
+  {
+    "name": "acerca-de",
+    "path": "/acerca-de",
+    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\acerca-de.vue",
+    "chunkName": "pages/acerca-de",
+    "_name": "_7641cfc5"
+  },
+  {
+    "name": "lista",
+    "path": "/lista",
+    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\lista.vue",
+    "chunkName": "pages/lista",
+    "_name": "_b6fd9a32"
+  },
+  {
+    "name": "lista-componente",
+    "path": "/lista-componente",
+    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\lista-componente.vue",
+    "chunkName": "pages/lista-componente",
+    "_name": "_b568b144"
+  },
+  {
+    "name": "nosotros",
+    "path": "/nosotros",
+    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nosotros.vue",
+    "chunkName": "pages/nosotros",
+    "_name": "_15b6c0ea"
+  },
+  {
+    "name": "nuevo",
+    "path": "/nuevo",
+    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nuevo.vue",
+    "chunkName": "pages/nuevo",
+    "_name": "_69a02fca"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_85708e94"
+  }
+]
