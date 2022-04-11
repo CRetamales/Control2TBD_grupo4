@@ -3,22 +3,22 @@
         <h1>Agregar un Manga</h1>
         <form>
             <div class="form-item">
-                <label for="title">Titulo</label>
-                <input type="text" id="title" v-model="newManga.title">
-                <label for="author">Autor</label>
-                <input type="text" id="author" v-model="newManga.author">
-                <label for="chapter">Capitulo</label>
-                <input type="text" id="chapter" v-model="newManga.chapter">
-                <label for="category">Categorias</label>
-                <input type="text" id="category" v-model="newManga.category"> <!-- cambiar aqui por algun seleccionador multiple -->
-                <label for="edit">Editorial</label>
-                <input type="text" id="edit" v-model="newManga.edit">
-                <label for="leng">Idioma</label>
-                <input type="text" id="leng" v-model="newManga.leng">
-                <label for="pages">Hojas</label>
-                <input type="text" id="pages" v-model="newManga.pages">
-                <label for="price">Precio</label>
-                <input type="text" id="price" v-model="newManga.price">
+                <label for="nombremanga">Titulo</label>
+                <input type="text" id="nombremanga" v-model="newManga.nombremanga">
+                <label for="autormanga">Autor</label>
+                <input type="text" id="autormanga" v-model="newManga.autormanga">
+                <label for="categoriamanga">Categoria</label>
+                <input type="text" id="categoriamanga" v-model="newManga.categoriamanga">
+                <label for="editorialmanga">Editorial</label>
+                <input type="text" id="editorialmanga" v-model="newManga.editorialmanga"> <!-- cambiar aqui por algun seleccionador multiple -->
+                <label for="idiomamanga">Idioma</label>
+                <input type="text" id="idiomamanga" v-model="newManga.idiomamanga">
+                <label for="capitulomanga">Capitulo</label>
+                <input type="text" id="capitulomanga" v-model="newManga.capitulomanga">
+                <label for="numeropaginas">Hojas</label>
+                <input type="text" id="numeropaginas" v-model="newManga.numeropaginas">
+                <label for="preciomanga">Precio</label>
+                <input type="text" id="preciomanga" v-model="newManga.preciomanga">
             </div>
             <div>
                 <button type="button" @click="send" class="main">Imprimir</button>
@@ -57,15 +57,10 @@ export default {
             this.message = '';
             console.log("a");
             //validaciones de formulario
-            if (checkNulls(this.newManga)){
-                print("A");
-                this.message = 'Debe completar todos los campos.';
-                return false
-            }
             //envío de datos del formulario
             console.log("a");
             try {
-                var result = await this.$axios.post('/mangas', this.newManga);
+                var result = await this.$axios.post('http://localhost:8080/manga/create', this.newManga);
                 let manga = result.data;
                 //mensaje de exito 
                 this.message = `Se creó un nuevo perro con id: ${manga.id}`;

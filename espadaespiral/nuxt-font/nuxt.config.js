@@ -1,3 +1,6 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
 export default {
   //se cambia puerto por defecto
   server: {
@@ -46,7 +49,9 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:3000', 
+    baseURL: process.env.BACKEND_URL,
+    proxyHeaders: false,
+    credentials: false
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

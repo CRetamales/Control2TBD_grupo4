@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _7641cfc5 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
-const _b6fd9a32 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
-const _b568b144 = () => interopDefault(import('..\\pages\\lista-componente.vue' /* webpackChunkName: "pages/lista-componente" */))
-const _15b6c0ea = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
-const _69a02fca = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
-const _85708e94 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _766c29cf = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
+const _322e21f1 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
+const _3a73ce14 = () => interopDefault(import('..\\pages\\lista-componente.vue' /* webpackChunkName: "pages/lista-componente" */))
+const _36bc477e = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
+const _58dcd725 = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
+const _4af4a7c0 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/acerca-de",
-    component: _7641cfc5,
+    component: _766c29cf,
     name: "acerca-de"
   }, {
     path: "/lista",
-    component: _b6fd9a32,
+    component: _322e21f1,
     name: "lista"
   }, {
     path: "/lista-componente",
-    component: _b568b144,
+    component: _3a73ce14,
     name: "lista-componente"
   }, {
     path: "/nosotros",
-    component: _15b6c0ea,
+    component: _36bc477e,
     name: "nosotros"
   }, {
     path: "/nuevo",
-    component: _69a02fca,
+    component: _58dcd725,
     name: "nuevo"
   }, {
     path: "/",
-    component: _85708e94,
+    component: _4af4a7c0,
     name: "index"
   }],
 

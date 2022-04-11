@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-    <h1>Todos los perros</h1>
+    <h1>Todos los mangas</h1>
     <ul class="item-list">
       <li v-for="(item, index) in items" :key="index">
        <!-- <img :src="'https://loremflickr.com/160/120/dog?lock='+i"/>-->
@@ -26,7 +26,7 @@ export default {
         //Función asíncrona para consultar los datos
         getData: async function(){
             try {
-                let response = await this.$axios.get('/mangas');
+                let response = await this.$axios.get('http://localhost:8081/manga');
                 this.items  = response.data;
                 console.log(response)
             } catch (error) {

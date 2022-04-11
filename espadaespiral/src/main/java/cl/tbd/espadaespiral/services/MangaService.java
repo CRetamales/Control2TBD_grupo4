@@ -19,9 +19,9 @@ public class MangaService{
         this.mangaRepository = mangaRepository;
     }
 
-
     @GetMapping("/manga")
     public List<Manga> getAllManga(){
+        System.out.println(mangaRepository.getAll());
         return mangaRepository.getAll();
     }
 
@@ -51,6 +51,7 @@ public class MangaService{
         //Manga manga2 = new Manga("Naruto", "Masashi Kishimoto", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
         Manga manga3 = new Manga("Bleach", "Tite Kubo", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
         mangaRepository.createManga(manga3);
+        //manga = new Manga()
         return String.format("Se ha creado el manga %s.", manga3.getNombreManga());
     }
     

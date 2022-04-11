@@ -12,14 +12,14 @@ public class DatabaseContext {
   public static Sql2o sql2o(){
     //Carlos,Bastian,Felipe,Carla,Estefania,Sora
     String[] usuarios = new String[] {"postgres", "postgres", "postgres","postgres","postgres","postgress"};
-    String[] contraseñas = new String[] {"default", "2701", "contra3","contra4","3144","contra6"};
+    String[] contraseñas = new String[] {"default", "2701", "Fcii01000110","contra4","3144","contra6"};
     int i;
 
     //Esto se debe cambiar acorde a la base de datos y las credenciales
     for(i=0;i<6;i++){
 
       try{
-        Sql2o base = new Sql2o("jdbc:postgresql://localhost:5433/MangaDB",usuarios[i],contraseñas[i]);
+        Sql2o base = new Sql2o("jdbc:postgresql://localhost:5432/MangaDB",usuarios[i],contraseñas[i]);
         Connection conn = base.open();
         return base;
 
