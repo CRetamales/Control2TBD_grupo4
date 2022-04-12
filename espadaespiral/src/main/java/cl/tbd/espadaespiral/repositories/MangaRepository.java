@@ -12,7 +12,7 @@ public interface MangaRepository  {
     public List<Manga> getAll();
     public List<Manga> showMangaByName(String nombremanga);
     public List<Manga> showMangaById(long id);
-    public void createManga(Manga manga);
+    public Manga createManga(Manga manga);
     public void deleteMangaByName(String nombremanga);
     public void deleteMangaById(long id);
     public void updateMangaByName(String nombremanga);

@@ -4,6 +4,7 @@ import cl.tbd.espadaespiral.models.Manga;
 import org.sql2o.Sql2o;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jmx.export.annotation.ManagedAttribute;
 import org.springframework.stereotype.Repository;
 import org.sql2o.Connection;
 
@@ -65,7 +66,7 @@ public class MangaRepositoryImp implements MangaRepository {
     
 
     @Override
-    public void createManga(Manga manga){
+    public Manga createManga(Manga manga){
         Connection conn = sql2o.open();
 
         String SQL_INSERT = "INSERT INTO manga(nombremanga, autormanga, categoriamanga, editorialmanga, idiomamanga, capitulomanga, numeropaginas, preciomanga)" + 
@@ -82,9 +83,11 @@ public class MangaRepositoryImp implements MangaRepository {
                     .addParameter("paginas", manga.getNumeroPaginas())
                     .addParameter("precio", manga.getPrecioManga())
                     .executeUpdate();
+            return manga;
 
         } catch(Exception e) {
             System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo crear el manga\n");
+            return null;
         }
     }
 

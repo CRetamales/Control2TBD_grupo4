@@ -2,10 +2,15 @@ package cl.tbd.espadaespiral.services;
 
 import java.util.List;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import cl.tbd.espadaespiral.models.Manga;
 import cl.tbd.espadaespiral.repositories.MangaRepository;
@@ -45,12 +50,11 @@ public class MangaService{
     }
 
 
-    @RequestMapping(value = "/manga/create", produces = "application/json", method = {RequestMethod.GET, RequestMethod.POST})
-    public void createManga(){
-        //Manga manga = new Manga(7, "One Piece", "Eiichiro Oda", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
-        //Manga manga2 = new Manga(5, "Naruto", "Masashi Kishimoto", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
-        Manga manga3 = new Manga(15, "Bleach", "Tite Kubo", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
-        mangaRepository.createManga(manga3);
+    @PostMapping("/manga/create")
+    @ResponseBody
+    public Manga createManga(@RequestBody Manga manga){
+        mangaRepository.createManga(manga);
+        return manga;
     }
     
 
