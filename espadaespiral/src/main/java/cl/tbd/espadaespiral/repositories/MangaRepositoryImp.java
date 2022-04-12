@@ -83,8 +83,8 @@ public class MangaRepositoryImp implements MangaRepository {
                     .addParameter("precio", manga.getPrecioManga())
                     .executeUpdate();
 
-        } finally {
-            conn.close();
+        } catch(Exception e) {
+            System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo crear el manga\n");
         }
     }
 
@@ -97,8 +97,8 @@ public class MangaRepositoryImp implements MangaRepository {
         try{
             conn.createQuery(SQL_DELETE).addParameter("nombremanga", nombremanga).executeUpdate();
 
-        } finally {
-            conn.close();
+        } catch(Exception e) {
+            System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo borrar el manga\n");
         }
     }
     
@@ -112,41 +112,58 @@ public class MangaRepositoryImp implements MangaRepository {
         try{
             conn.createQuery(SQL_DELETE).addParameter("id", id).executeUpdate();
 
-        } finally {
-            conn.close();
+        } catch(Exception e) {
+            System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo borrar el manga\n");
         }
     }
 
 
-    /*
     @Override
     public void updateMangaByName(String nombremanga){
-        Connection conn = sql2o.open();
 
-        Object manga = conn.createQuery("SELECT * FROM manga WHERE manga.nombremanga = :nombremanga");
+        String SQL_UPDATE = "UPDATE manga SET nombremanga = :nombremanga, autormanga = :autor, categoriamanga = :categoria, editorialmanga = :editorial, idiomamanga = :idioma, capitulomanga = :capitulo, numeropaginas = :paginas, preciomanga = :precio, id = :id WHERE nombremanga = :nombremanga";
+        Manga manga3 = new Manga(10, "Bleach", "Tite Kubo", "Accion", "Shonen Jump", "Español", 100, 300, 14990);
 
-        if(sql != null){
+        try(Connection conn = sql2o.open()) {
+            conn.createQuery(SQL_UPDATE)
+                    .addParameter("nombremanga", manga3.getNombreManga())
+                    .addParameter("autor", manga3.getAutorManga())
+                    .addParameter("categoria", manga3.getCategoriaManga())
+                    .addParameter("editorial", manga3.getEditorialManga())
+                    .addParameter("idioma", manga3.getIdiomaManga())
+                    .addParameter("capitulo", manga3.getCapituloManga())
+                    .addParameter("paginas", manga3.getNumeroPaginas())
+                    .addParameter("precio", manga3.getPrecioManga())
+                    .addParameter("id", manga3.getMangaid())
+                    .executeUpdate();
 
-            String SQL_UPDATE = "UPDATE manga SET manga.nombremanga = :nombremanga, manga.autormanga = :autor, manga.categoriamanga = :categoria, manga.editorialmanga = :editorial, manga.idiomamanga = :idioma, manga.capitulomanga = :capitulo, manga.numeropaginas = :paginas, manga.preciomanga = :precio WHERE manga.nombremanga = :nombremanga";
-
-            try{
-                conn.createQuery(SQL_UPDATE)
-                        .addParameter("nombremanga", nombremanga)
-                        .addParameter("autor", autormanga)
-                        .addParameter("categoria", manga.getCategoriaManga())
-                        .addParameter("editorial", manga.getEditorialManga())
-                        .addParameter("idioma", manga.getIdiomaManga())
-                        .addParameter("capitulo", manga.getCapituloManga())
-                        .addParameter("paginas", manga.getNumeroPaginas())
-                        .addParameter("precio", manga.getPrecioManga())
-                        .executeUpdate();
-
-            } finally {
-                conn.close();
-            }
-
+        } catch(Exception e) {
+            System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo actualizar el manga\n");
         }
+    }  
 
-    }   */
 
+    @Override
+    public void updateMangaById(long id){
+
+        String SQL_UPDATE = "UPDATE manga SET nombremanga = :nombremanga, autormanga = :autor, categoriamanga = :categoria, editorialmanga = :editorial, idiomamanga = :idioma, capitulomanga = :capitulo, numeropaginas = :paginas, preciomanga = :precio, id = :id WHERE id = :id";
+        Manga manga3 = new Manga(10, "Jojo", "Hirohiko Araki", "Accion", "Shonen Jump", "Español", 100, 300, 14990);
+
+        try(Connection conn = sql2o.open()) {
+            conn.createQuery(SQL_UPDATE)
+                    .addParameter("nombremanga", manga3.getNombreManga())
+                    .addParameter("autor", manga3.getAutorManga())
+                    .addParameter("categoria", manga3.getCategoriaManga())
+                    .addParameter("editorial", manga3.getEditorialManga())
+                    .addParameter("idioma", manga3.getIdiomaManga())
+                    .addParameter("capitulo", manga3.getCapituloManga())
+                    .addParameter("paginas", manga3.getNumeroPaginas())
+                    .addParameter("precio", manga3.getPrecioManga())
+                    .addParameter("id", manga3.getMangaid())
+                    .executeUpdate();
+
+        } catch(Exception e) {
+            System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo actualizar el manga\n");
+        }
+    }
 }

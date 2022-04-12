@@ -26,13 +26,13 @@ public class MangaService{
     }
 
 
-    @GetMapping("/manga/getName/{nombremanga}")
+    @GetMapping("/manga/getByName/{nombremanga}")
     public List<Manga> getMangaByNombre(@PathVariable String nombremanga){
         return mangaRepository.showMangaByName(nombremanga);
     }
 
 
-    @GetMapping("/manga/getId/{id}")
+    @GetMapping("/manga/getById/{id}")
     public List<Manga> getMangaById(@PathVariable long id){
         return mangaRepository.showMangaById(id);
     }
@@ -46,27 +46,35 @@ public class MangaService{
 
 
     @RequestMapping(value = "/manga/create", produces = "application/json", method = {RequestMethod.GET, RequestMethod.POST})
-    public String createManga(){
-        //Manga manga = new Manga("One Piece", "Eiichiro Oda", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
-        //Manga manga2 = new Manga("Naruto", "Masashi Kishimoto", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
-        Manga manga3 = new Manga("Bleach", "Tite Kubo", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
+    public void createManga(){
+        //Manga manga = new Manga(7, "One Piece", "Eiichiro Oda", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
+        //Manga manga2 = new Manga(5, "Naruto", "Masashi Kishimoto", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
+        Manga manga3 = new Manga(15, "Bleach", "Tite Kubo", "Comedia", "Shonen Jump", "Japones", 1, 100, 1000);
         mangaRepository.createManga(manga3);
-        //manga = new Manga()
-        return String.format("Se ha creado el manga %s.", manga3.getNombreManga());
     }
     
 
-    @RequestMapping(value = "/manga/deleteName/{nombremanga}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.DELETE})
-    public String deleteManga(@PathVariable String nombremanga){
+    @RequestMapping(value = "/manga/deleteByName/{nombremanga}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.DELETE})
+    public void deleteManga(@PathVariable String nombremanga){
         mangaRepository.deleteMangaByName(nombremanga);
-        return String.format("Se ha eliminado el manga %s.", nombremanga);
     }
 
 
-    @RequestMapping(value = "/manga/deleteId/{id}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.DELETE})
-    public String deleteManga(@PathVariable long id){
+    @RequestMapping(value = "/manga/deleteById/{id}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.DELETE})
+    public void deleteManga(@PathVariable long id){
         mangaRepository.deleteMangaById(id);
-        return String.format("Se ha eliminado el manga con id: %d.", id);
+    }
+
+
+    @RequestMapping(value = "/manga/updateByName/{nombremanga}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.PUT})
+    public void updateManga(@PathVariable String nombremanga){
+        mangaRepository.updateMangaByName(nombremanga);
+    }
+
+
+    @RequestMapping(value = "/manga/updateById/{id}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.PUT})
+    public void updateManga(@PathVariable long id){
+        mangaRepository.updateMangaById(id);
     }
 
 }

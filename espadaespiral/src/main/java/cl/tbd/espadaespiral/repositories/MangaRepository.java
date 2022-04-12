@@ -15,7 +15,6 @@ public interface MangaRepository  {
     public void createManga(Manga manga);
     public void deleteMangaByName(String nombremanga);
     public void deleteMangaById(long id);
-
-    //public void updateMangaByName(String nombremanga);
-    //public void updateMangaById();
+    public void updateMangaByName(String nombremanga);
+    public void updateMangaById(long id);
 }
