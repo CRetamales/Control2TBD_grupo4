@@ -5,7 +5,7 @@
       <li v-for="(item, index) in items" :key="index">
        <!-- <img :src="'https://loremflickr.com/160/120/dog?lock='+i"/>-->
         <!-- {{index}} -  -->
-        {{item.name}}
+        {{item.nombreManga}}
       </li>
     </ul>
     <div v-if="items.length==0" class="empty-list">
@@ -26,7 +26,7 @@ export default {
         //Función asíncrona para consultar los datos
         getData: async function(){
             try {
-                let response = await this.$axios.get('http://localhost:8081/manga');
+                let response = await this.$axios.get('/manga');
                 this.items  = response.data;
                 console.log(response)
             } catch (error) {

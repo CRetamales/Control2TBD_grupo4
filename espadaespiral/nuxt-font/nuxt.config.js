@@ -50,8 +50,11 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL: process.env.BACKEND_URL,
-    proxyHeaders: false,
-    credentials: false
+    proxy: true,
+  },
+
+  proxy: {
+    "/manga": "http://localhost:8081"
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
