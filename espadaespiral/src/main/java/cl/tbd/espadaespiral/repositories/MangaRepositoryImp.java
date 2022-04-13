@@ -134,49 +134,48 @@ public class MangaRepositoryImp implements MangaRepository {
         }
     }
 
-
+/*
     @Override
-    public void updateMangaByName(String nombremanga){
+    public void updateMangaByName(Manga manga){
 
         String SQL_UPDATE = "UPDATE manga SET nombremanga = :nombremanga, autormanga = :autor, categoriamanga = :categoria, editorialmanga = :editorial, idiomamanga = :idioma, capitulomanga = :capitulo, numeropaginas = :paginas, preciomanga = :precio, id = :id WHERE nombremanga = :nombremanga";
-        Manga manga3 = new Manga(10, "Bleach", "Tite Kubo", "Accion", "Shonen Jump", "Español", 100, 300, 14990);
 
         try(Connection conn = sql2o.open()) {
             conn.createQuery(SQL_UPDATE)
-                    .addParameter("nombremanga", manga3.getNombreManga())
-                    .addParameter("autor", manga3.getAutorManga())
-                    .addParameter("categoria", manga3.getCategoriaManga())
-                    .addParameter("editorial", manga3.getEditorialManga())
-                    .addParameter("idioma", manga3.getIdiomaManga())
-                    .addParameter("capitulo", manga3.getCapituloManga())
-                    .addParameter("paginas", manga3.getNumeroPaginas())
-                    .addParameter("precio", manga3.getPrecioManga())
-                    .addParameter("id", manga3.getMangaid())
+                    .addParameter("nombremanga", manga.getNombreManga())
+                    .addParameter("autor", manga.getAutorManga())
+                    .addParameter("categoria", manga.getCategoriaManga())
+                    .addParameter("editorial", manga.getEditorialManga())
+                    .addParameter("idioma", manga.getIdiomaManga())
+                    .addParameter("capitulo", manga.getCapituloManga())
+                    .addParameter("paginas", manga.getNumeroPaginas())
+                    .addParameter("precio", manga.getPrecioManga())
+                    .addParameter("id", manga.getMangaid())
                     .executeUpdate();
 
         } catch(Exception e) {
             System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo actualizar el manga\n");
         }
-    }  
+    }  */
 
 
     @Override
-    public void updateMangaById(long id){
+    public void updateMangaById(Manga manga){
 
         String SQL_UPDATE = "UPDATE manga SET nombremanga = :nombremanga, autormanga = :autor, categoriamanga = :categoria, editorialmanga = :editorial, idiomamanga = :idioma, capitulomanga = :capitulo, numeropaginas = :paginas, preciomanga = :precio, id = :id WHERE id = :id";
-        Manga manga3 = new Manga(10, "Jojo", "Hirohiko Araki", "Accion", "Shonen Jump", "Español", 100, 300, 14990);
-
+        
+        System.out.println("llega acá");
         try(Connection conn = sql2o.open()) {
             conn.createQuery(SQL_UPDATE)
-                    .addParameter("nombremanga", manga3.getNombreManga())
-                    .addParameter("autor", manga3.getAutorManga())
-                    .addParameter("categoria", manga3.getCategoriaManga())
-                    .addParameter("editorial", manga3.getEditorialManga())
-                    .addParameter("idioma", manga3.getIdiomaManga())
-                    .addParameter("capitulo", manga3.getCapituloManga())
-                    .addParameter("paginas", manga3.getNumeroPaginas())
-                    .addParameter("precio", manga3.getPrecioManga())
-                    .addParameter("id", manga3.getMangaid())
+                    .addParameter("nombremanga", manga.getNombreManga())
+                    .addParameter("autor", manga.getAutorManga())
+                    .addParameter("categoria", manga.getCategoriaManga())
+                    .addParameter("editorial", manga.getEditorialManga())
+                    .addParameter("idioma", manga.getIdiomaManga())
+                    .addParameter("capitulo", manga.getCapituloManga())
+                    .addParameter("paginas", manga.getNumeroPaginas())
+                    .addParameter("precio", manga.getPrecioManga())
+                    .addParameter("id", manga.getMangaid())
                     .executeUpdate();
 
         } catch(Exception e) {

@@ -72,15 +72,16 @@ public class MangaService{
     }
 
 
+    /*
     @RequestMapping(value = "/manga/updateByName/{nombremanga}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.PUT})
-    public void updateManga(@PathVariable String nombremanga){
-        mangaRepository.updateMangaByName(nombremanga);
-    }
+    public void updateManga(@RequestBody Manga manga){
+        mangaRepository.updateMangaByName(manga);
+    }*/
 
 
-    @RequestMapping(value = "/manga/updateById/{id}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.PUT})
-    public void updateManga(@PathVariable long id){
-        mangaRepository.updateMangaById(id);
+    @RequestMapping(value = "/manga/updateById/{id}", produces = "application/json", method = {RequestMethod.PUT})
+    public void updateManga(@RequestBody Manga manga){
+        mangaRepository.updateMangaById(manga);
     }
 
 }

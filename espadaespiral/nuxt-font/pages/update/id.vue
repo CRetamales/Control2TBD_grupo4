@@ -24,7 +24,7 @@
                 <input type="text" id="precioManga" v-model="newManga.precioManga">
             </div>
             <div>
-                <button type="button" @click="send" class="main">Crear</button>
+                <button type="button" @click="putData" class="main">Actualizar</button>
             </div>
             <div class="info">
                 <h2>Objeto</h2>
@@ -38,8 +38,9 @@
     </div>
 </template>
 <script>
+
+
 function checkNulls(obj){
-    console.log("b");
     console.log(obj);
     for (var c in obj){
         if (obj[c] != null && obj[c] != ""){
@@ -56,16 +57,19 @@ export default {
         }
     },
     methods:{
-        send:async function(){
+
+        
+        putData:async function(){
             this.message = '';
+            const id = this.newManga.mangaid;
             //validaciones de formulario
             //envío de datos del formulario
             try {
-                var result = await this.$axios.post('/manga/create',this.newManga);
+                var result = await this.$axios.put(`/manga/updateById/${this.newManga.mangaid}`,this.newManga);
                 console.log(result.data)
                 let manga = result.data;
                 //mensaje de exito
-                this.message = `Se creó un nuevo Manga con id: ${manga.mangaid - 1}`;
+                this.message = `Se actulizo el nuevo Manga con id: ${id}`;
                 this.newManga = {};
             } catch (error) {
                 //mensaje de error
