@@ -62,7 +62,7 @@ export default {
                 console.log(result.data)
                 let manga = result.data;
                 //mensaje de exito
-                this.message = `Se creó un nuevo Manga con id: ${manga.mangaid}`;
+                this.message = `Se creó un nuevo Manga con id: ${manga.mangaid - 1}`;
                 this.newManga = {};
             } catch (error) {
                 //mensaje de error

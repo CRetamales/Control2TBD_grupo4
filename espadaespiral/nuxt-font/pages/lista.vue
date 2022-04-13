@@ -40,3 +40,43 @@ export default {
     }
 }
 </script>
+<style>
+    .container
+    {
+        width: 150px;
+    }
+    .container h1
+    {
+        color: #fff;
+        background: #f33835;
+        padding: 10px 20px;
+        font-size: 35px;
+        text-align: center;
+        font-weight: 700;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+
+    .container ul
+    {
+        position: relative;
+        background: #fff2;
+    }
+    .container ul li
+    {
+        text-align: center;
+        list-style: none;
+        padding:10px;
+        width: 100%;
+        background: #fff2;
+        box-shadow: 0 5px 25 px rgba(0,0,0.1);
+    }
+    .container ul li:hover
+    {
+        transform: scale(1.4);
+        z-index:100;
+        background: #ff3e25;
+        
+    }
+</style>

@@ -1,9 +1,9 @@
 
 
 :root{
-  --main-color:#1121EF;
-  --dark-color:#232E98;
-  --dark-bg-color:#4F4F4F;
+  --main-color:#d81919;
+  --dark-color:#df3721;
+  --dark-bg-color:#000000;
   --text-color:#040718;
   --light-color:#FFFFFF;
 }
@@ -32,6 +32,7 @@ footer{
 ul, li{
   margin:0;
   padding:0;
+ 
 }
 nav{
   background-color: var(--dark-color);
@@ -68,7 +69,7 @@ form *+*{
   width: 100%;
 }
 button{
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: inline-block;
   border-radius: 4px;
   border: 1px solid var(--main-color);

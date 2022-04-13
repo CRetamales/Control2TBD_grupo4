@@ -4,13 +4,13 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6cd40648 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
-const _ff17dfec = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpackChunkName: "pages/eliminar" */))
-const _6c6122ea = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
-const _2e2aa77b = () => interopDefault(import('..\\pages\\lista-componente.vue' /* webpackChunkName: "pages/lista-componente" */))
-const _cbffe6b0 = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
-const _d9e04fc4 = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
-const _f5b0ae8e = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _7641cfc5 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
+const _4872d108 = () => interopDefault(import('..\\pages\\actualizar.vue' /* webpackChunkName: "pages/actualizar" */))
+const _48ceba26 = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpackChunkName: "pages/eliminar" */))
+const _b6fd9a32 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
+const _15b6c0ea = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
+const _69a02fca = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
+const _85708e94 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -25,31 +25,31 @@ export const routerOptions = {
 
   routes: [{
     path: "/acerca-de",
-    component: _6cd40648,
+    component: _7641cfc5,
     name: "acerca-de"
   }, {
+    path: "/actualizar",
+    component: _4872d108,
+    name: "actualizar"
+  }, {
     path: "/eliminar",
-    component: _ff17dfec,
+    component: _48ceba26,
     name: "eliminar"
   }, {
     path: "/lista",
-    component: _6c6122ea,
+    component: _b6fd9a32,
     name: "lista"
   }, {
-    path: "/lista-componente",
-    component: _2e2aa77b,
-    name: "lista-componente"
-  }, {
     path: "/nosotros",
-    component: _cbffe6b0,
+    component: _15b6c0ea,
     name: "nosotros"
   }, {
     path: "/nuevo",
-    component: _d9e04fc4,
+    component: _69a02fca,
     name: "nuevo"
   }, {
     path: "/",
-    component: _f5b0ae8e,
+    component: _85708e94,
     name: "index"
   }],
 

@@ -11,15 +11,15 @@
       <div><p><br></p></div>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://www.instagram.com/espadaespiral/"
           target="_blank"
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
+          Instagram
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/CRetamales/Control2TBD_grupo4"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"

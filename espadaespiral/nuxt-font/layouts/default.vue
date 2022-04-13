@@ -4,26 +4,29 @@
       <nav><!-- Enlaces de navegación-->
         <ul>
           <li>
+            <a href="/">Inicio</a>
+          </li>
+          <li>
             <a href="/lista">Mangas</a>
           </li>
           <li>
-            <a href="/nuevo">Nuevo</a>
+            <a href="/nuevo">Crear Nuevo Manga</a>
           </li>
           <li>
-            <a href="/lista-componente">Lista Comp.</a>
+            <a href="/actualizar">Actualizar Manga.</a>
           </li>
           <li>
-            <a href="/nosotros">Nosotros</a>
+            <a href="/eliminar">Eliminar Manga</a>
           </li>
           <li>
-            <a href="/eliminar">Eliminar</a>
+            <a href="/nosotros">Nosotros </a>
           </li>
         </ul>
       </nav>
     </header>
       <Nuxt /><!-- Contenidos de las páginas-->
     <footer><!-- contenido del footer -->
-      EspadaEspiral
+      Espada Espiral
     </footer>
   </div>
 </template>
@@ -54,6 +57,28 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.wrapper ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.wrapper ul li {
+  display: inline-block;
+
+}
+.wrapper ul li a{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: block;
+  padding:10px;
+}
+.wrapper ul li a:hover{
+  transform: scale(1.2);
+  background-color: #9c2c10;
 }
 
 .button--green {
