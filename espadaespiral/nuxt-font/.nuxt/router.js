@@ -10,6 +10,10 @@ const _48ceba26 = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpa
 const _b6fd9a32 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
 const _15b6c0ea = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
 const _69a02fca = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
+const _79994992 = () => interopDefault(import('..\\pages\\delete\\id.vue' /* webpackChunkName: "pages/delete/id" */))
+const _4b922342 = () => interopDefault(import('..\\pages\\delete\\name.vue' /* webpackChunkName: "pages/delete/name" */))
+const _27d4feb0 = () => interopDefault(import('..\\pages\\update\\id.vue' /* webpackChunkName: "pages/update/id" */))
+const _59b508e0 = () => interopDefault(import('..\\pages\\update\\name.vue' /* webpackChunkName: "pages/update/name" */))
 const _85708e94 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -47,6 +51,22 @@ export const routerOptions = {
     path: "/nuevo",
     component: _69a02fca,
     name: "nuevo"
+  }, {
+    path: "/delete/id",
+    component: _79994992,
+    name: "delete-id"
+  }, {
+    path: "/delete/name",
+    component: _4b922342,
+    name: "delete-name"
+  }, {
+    path: "/update/id",
+    component: _27d4feb0,
+    name: "update-id"
+  }, {
+    path: "/update/name",
+    component: _59b508e0,
+    name: "update-name"
   }, {
     path: "/",
     component: _85708e94,

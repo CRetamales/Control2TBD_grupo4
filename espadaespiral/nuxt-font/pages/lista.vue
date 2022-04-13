@@ -5,7 +5,7 @@
       <li v-for="(item, index) in items" :key="index">
        <!-- <img :src="'https://loremflickr.com/160/120/dog?lock='+i"/>-->
         <!-- {{index}} -  -->
-        {{item.nombreManga}}
+        {{item.nombreManga}} - Precio: {{item.precioManga}} CLP
       </li>
     </ul>
     <div v-if="items.length==0" class="empty-list">

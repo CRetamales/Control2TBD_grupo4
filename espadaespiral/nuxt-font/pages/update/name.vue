@@ -1,8 +1,11 @@
 <template>
     <div class="container">
-        <h1>Agregar un Manga</h1>
+        <h1>Actualizar Manga por Nombre</h1>
         <form>
             <div class="form-item">
+                <label for="nombreManga">Nombre Manga</label>
+                <input type="text" id="nombreManga" v-model="newManga.nombreManga">
+                <h2>Datos a actualizar</h2>
                 <label for="nombreManga">Nombre Manga</label>
                 <input type="text" id="nombreManga" v-model="newManga.nombreManga">
                 <label for="autorManga">Autor</label>
@@ -21,7 +24,7 @@
                 <input type="text" id="precioManga" v-model="newManga.precioManga">
             </div>
             <div>
-                <button type="button" @click="send" class="main">Crear</button>
+                <button type="button" @click="send" class="main">Actualizar</button>
             </div>
             <div class="info">
                 <h2>Objeto</h2>

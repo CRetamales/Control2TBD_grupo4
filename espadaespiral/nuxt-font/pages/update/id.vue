@@ -1,8 +1,11 @@
 <template>
     <div class="container">
-        <h1>Agregar un Manga</h1>
+        <h1>Actualizar Manga por Id</h1>
         <form>
             <div class="form-item">
+                <label for="mangaid">Id Manga</label>
+                <input type="text" id="mangaid" v-model="newManga.mangaid">
+                <h2>Datos a actualizar</h2>
                 <label for="nombreManga">Nombre Manga</label>
                 <input type="text" id="nombreManga" v-model="newManga.nombreManga">
                 <label for="autorManga">Autor</label>
