@@ -15,12 +15,15 @@
           <li>
             <a href="/nosotros">Nosotros</a>
           </li>
+          <li>
+            <a href="/eliminar">Eliminar</a>
+          </li>
         </ul>
       </nav>
     </header>
       <Nuxt /><!-- Contenidos de las páginas-->
     <footer><!-- contenido del footer -->
-      Ejemplo TBD
+      EspadaEspiral
     </footer>
   </div>
 </template>

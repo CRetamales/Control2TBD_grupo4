@@ -28,6 +28,17 @@ public class MangaRepositoryImp implements MangaRepository {
 
 
     @Override
+    public int newId(){
+        int id = 0;
+        String sql = "SELECT MAX(id) FROM manga";
+        try (Connection conn = sql2o.open()) {
+            id = conn.createQuery(sql).executeScalar(Integer.class);
+            return id+1;
+        }
+    }
+
+
+    @Override
     public List<Manga> getAll() {
         try(Connection conn = sql2o.open()){
             return conn.createQuery("SELECT * FROM manga ORDER BY manga.nombremanga ASC")
@@ -83,6 +94,8 @@ public class MangaRepositoryImp implements MangaRepository {
                     .addParameter("paginas", manga.getNumeroPaginas())
                     .addParameter("precio", manga.getPrecioManga())
                     .executeUpdate();
+
+            manga.setMangaid(newId());
             return manga;
 
         } catch(Exception e) {

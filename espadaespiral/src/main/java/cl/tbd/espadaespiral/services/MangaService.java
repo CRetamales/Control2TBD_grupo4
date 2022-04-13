@@ -53,8 +53,8 @@ public class MangaService{
     @PostMapping("/manga/create")
     @ResponseBody
     public Manga createManga(@RequestBody Manga manga){
-        mangaRepository.createManga(manga);
-        return manga;
+        Manga newManga = mangaRepository.createManga(manga);
+        return newManga;
     }
     
 

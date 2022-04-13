@@ -4,12 +4,13 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _9b773d2a = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
-const _342a878d = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
-const _29770ef8 = () => interopDefault(import('..\\pages\\lista-componente.vue' /* webpackChunkName: "pages/lista-componente" */))
-const _01537db6 = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
-const _5ad93cc1 = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
-const _4cf10d5c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _6cd40648 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
+const _ff17dfec = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpackChunkName: "pages/eliminar" */))
+const _6c6122ea = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
+const _2e2aa77b = () => interopDefault(import('..\\pages\\lista-componente.vue' /* webpackChunkName: "pages/lista-componente" */))
+const _cbffe6b0 = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
+const _d9e04fc4 = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
+const _f5b0ae8e = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +25,31 @@ export const routerOptions = {
 
   routes: [{
     path: "/acerca-de",
-    component: _9b773d2a,
+    component: _6cd40648,
     name: "acerca-de"
   }, {
+    path: "/eliminar",
+    component: _ff17dfec,
+    name: "eliminar"
+  }, {
     path: "/lista",
-    component: _342a878d,
+    component: _6c6122ea,
     name: "lista"
   }, {
     path: "/lista-componente",
-    component: _29770ef8,
+    component: _2e2aa77b,
     name: "lista-componente"
   }, {
     path: "/nosotros",
-    component: _01537db6,
+    component: _cbffe6b0,
     name: "nosotros"
   }, {
     path: "/nuevo",
-    component: _5ad93cc1,
+    component: _d9e04fc4,
     name: "nuevo"
   }, {
     path: "/",
-    component: _4cf10d5c,
+    component: _f5b0ae8e,
     name: "index"
   }],
 

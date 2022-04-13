@@ -9,6 +9,7 @@ public interface MangaRepository  {
     // supongo que aqui iran las menciones a las funciones del CRUD
 
     public int countMangas();
+    public int newId();
     public List<Manga> getAll();
     public List<Manga> showMangaByName(String nombremanga);
     public List<Manga> showMangaById(long id);

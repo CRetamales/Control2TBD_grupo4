@@ -1,27 +1,16 @@
 <template>
     <div class="container">
-        <h1>Agregar un Manga</h1>
+        <h1>Eliminar un Manga</h1>
         <form>
             <div class="form-item">
                 <label for="nombreManga">Titulo</label>
                 <input type="text" id="nombreManga" v-model="newManga.nombreManga">
-                <label for="autorManga">Autor</label>
-                <input type="text" id="autorManga" v-model="newManga.autor">
-                <label for="categoriaManga">Categoria</label>
-                <input type="text" id="categoriaManga" v-model="newManga.categoriaManga">
-                <label for="editorialManga">Editorial</label>
-                <input type="text" id="editorialManga" v-model="newManga.editorialManga">
-                <label for="idiomaManga">Idioma</label>
-                <input type="text" id="idiomaManga" v-model="newManga.idiomaManga">
-                <label for="capituloManga">Capitulo</label>
-                <input type="text" id="capituloManga" v-model="newManga.capituloManga">
-                <label for="numeropaginas">Hojas</label>
-                <input type="text" id="numeropaginas" v-model="newManga.numeroPaginas">
-                <label for="precioManga">Precio</label>
-                <input type="text" id="precioManga" v-model="newManga.precioManga">
+                <label for="id">Id del Manga</label>
+                <input type="long" id="id" v-model="newManga.idManga">
             </div>
             <div>
-                <button type="button" @click="send" class="main">Crear</button>
+                <button type="button" @click="send" class="main">Eliminar por Id</button>
+                <button type="button" @click="send" class="main">Eliminar por Nombre</button>
             </div>
             <div class="info">
                 <h2>Objeto</h2>
