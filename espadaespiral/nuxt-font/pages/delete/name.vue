@@ -4,14 +4,14 @@
         <form>
             <div class="form-item">
                 <label for="nombreManga">Nombre Manga</label>
-                <input type="text" id="nombreManga" v-model="newManga.nombreManga">
+                <input type="text" id="nombreManga" v-model="mangaDeleted.nombreManga">
             </div>
             <div>
                 <button type="button" @click="send" class="main">Eliminar</button>
             </div>
             <div class="info">
                 <h2>Objeto</h2>
-                <code>{{newManga}}</code>
+                <code>{{mangaDeleted}}</code>
                 <p class="message">
                     {{message}}
                 </p>
@@ -35,7 +35,7 @@ export default {
     data(){
         return{
             message:'',
-            newManga:{}
+            mangaDeleted:{}
         }
     },
     methods:{
@@ -44,12 +44,11 @@ export default {
             //validaciones de formulario
             //envío de datos del formulario
             try {
-                var result = await this.$axios.post('/manga/create',this.newManga);
-                console.log(result.data)
-                let manga = result.data;
+                var result = await this.$axios.post('/manga/deleteByName',this.mangaDeleted.nombreManga);
+                console.log(this.mangaDeleted.nombreManga);
                 //mensaje de exito
-                this.message = `Se creó un nuevo Manga con id: ${manga.mangaid}`;
-                this.newManga = {};
+                this.message = `Se elimino el Manga de nombre: ${this.mangaDeleted.nombreManga}`;
+                this.mangaDeleted = {};
             } catch (error) {
                 //mensaje de error
                 console.log('error', error)

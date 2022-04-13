@@ -4,17 +4,17 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _7641cfc5 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
-const _4872d108 = () => interopDefault(import('..\\pages\\actualizar.vue' /* webpackChunkName: "pages/actualizar" */))
-const _48ceba26 = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpackChunkName: "pages/eliminar" */))
-const _b6fd9a32 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
-const _15b6c0ea = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
-const _69a02fca = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
-const _79994992 = () => interopDefault(import('..\\pages\\delete\\id.vue' /* webpackChunkName: "pages/delete/id" */))
-const _4b922342 = () => interopDefault(import('..\\pages\\delete\\name.vue' /* webpackChunkName: "pages/delete/name" */))
-const _27d4feb0 = () => interopDefault(import('..\\pages\\update\\id.vue' /* webpackChunkName: "pages/update/id" */))
-const _59b508e0 = () => interopDefault(import('..\\pages\\update\\name.vue' /* webpackChunkName: "pages/update/name" */))
-const _85708e94 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _71adba0e = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
+const _b06caa70 = () => interopDefault(import('..\\pages\\actualizar.vue' /* webpackChunkName: "pages/actualizar" */))
+const _e8bfcd8e = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpackChunkName: "pages/eliminar" */))
+const _e04b7fca = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
+const _b5a7d452 = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
+const _92ee1562 = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
+const _459c5cde = () => interopDefault(import('..\\pages\\delete\\id.vue' /* webpackChunkName: "pages/delete/id" */))
+const _231d938e = () => interopDefault(import('..\\pages\\delete\\name.vue' /* webpackChunkName: "pages/delete/name" */))
+const _184fdc08 = () => interopDefault(import('..\\pages\\update\\id.vue' /* webpackChunkName: "pages/update/id" */))
+const _3140792c = () => interopDefault(import('..\\pages\\update\\name.vue' /* webpackChunkName: "pages/update/name" */))
+const _aebe742c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -29,47 +29,47 @@ export const routerOptions = {
 
   routes: [{
     path: "/acerca-de",
-    component: _7641cfc5,
+    component: _71adba0e,
     name: "acerca-de"
   }, {
     path: "/actualizar",
-    component: _4872d108,
+    component: _b06caa70,
     name: "actualizar"
   }, {
     path: "/eliminar",
-    component: _48ceba26,
+    component: _e8bfcd8e,
     name: "eliminar"
   }, {
     path: "/lista",
-    component: _b6fd9a32,
+    component: _e04b7fca,
     name: "lista"
   }, {
     path: "/nosotros",
-    component: _15b6c0ea,
+    component: _b5a7d452,
     name: "nosotros"
   }, {
     path: "/nuevo",
-    component: _69a02fca,
+    component: _92ee1562,
     name: "nuevo"
   }, {
     path: "/delete/id",
-    component: _79994992,
+    component: _459c5cde,
     name: "delete-id"
   }, {
     path: "/delete/name",
-    component: _4b922342,
+    component: _231d938e,
     name: "delete-name"
   }, {
     path: "/update/id",
-    component: _27d4feb0,
+    component: _184fdc08,
     name: "update-id"
   }, {
     path: "/update/name",
-    component: _59b508e0,
+    component: _3140792c,
     name: "update-name"
   }, {
     path: "/",
-    component: _85708e94,
+    component: _aebe742c,
     name: "index"
   }],
 

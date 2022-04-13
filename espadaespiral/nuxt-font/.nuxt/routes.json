@@ -2,67 +2,67 @@
   {
     "name": "acerca-de",
     "path": "/acerca-de",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\acerca-de.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\acerca-de.vue",
     "chunkName": "pages/acerca-de"
   },
   {
     "name": "actualizar",
     "path": "/actualizar",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\actualizar.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\actualizar.vue",
     "chunkName": "pages/actualizar"
   },
   {
     "name": "eliminar",
     "path": "/eliminar",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\eliminar.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\eliminar.vue",
     "chunkName": "pages/eliminar"
   },
   {
     "name": "lista",
     "path": "/lista",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\lista.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\lista.vue",
     "chunkName": "pages/lista"
   },
   {
     "name": "nosotros",
     "path": "/nosotros",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nosotros.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nosotros.vue",
     "chunkName": "pages/nosotros"
   },
   {
     "name": "nuevo",
     "path": "/nuevo",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nuevo.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nuevo.vue",
     "chunkName": "pages/nuevo"
   },
   {
     "name": "delete-id",
     "path": "/delete/id",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\delete\\\\id.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\delete\\\\id.vue",
     "chunkName": "pages/delete/id"
   },
   {
     "name": "delete-name",
     "path": "/delete/name",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\delete\\\\name.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\delete\\\\name.vue",
     "chunkName": "pages/delete/name"
   },
   {
     "name": "update-id",
     "path": "/update/id",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\update\\\\id.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\update\\\\id.vue",
     "chunkName": "pages/update/id"
   },
   {
     "name": "update-name",
     "path": "/update/name",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\update\\\\name.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\update\\\\name.vue",
     "chunkName": "pages/update/name"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\HP 14\\\\Desktop\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]

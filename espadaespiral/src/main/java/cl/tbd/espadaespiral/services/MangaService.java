@@ -58,9 +58,11 @@ public class MangaService{
     }
     
 
-    @RequestMapping(value = "/manga/deleteByName/{nombremanga}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.DELETE})
-    public void deleteManga(@PathVariable String nombremanga){
-        mangaRepository.deleteMangaByName(nombremanga);
+    @PostMapping("/manga/deleteByName")
+    @ResponseBody
+    public String deleteManga(@RequestBody String nombreManga){
+        mangaRepository.deleteMangaByName(nombreManga);
+        return nombreManga;
     }
 
 

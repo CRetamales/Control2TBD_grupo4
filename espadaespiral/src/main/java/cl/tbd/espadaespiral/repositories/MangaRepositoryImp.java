@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jmx.export.annotation.ManagedAttribute;
 import org.springframework.stereotype.Repository;
 import org.sql2o.Connection;
+import org.sql2o.Query;
 
 @Repository
 public class MangaRepositoryImp implements MangaRepository {
@@ -79,7 +80,6 @@ public class MangaRepositoryImp implements MangaRepository {
     @Override
     public Manga createManga(Manga manga){
         Connection conn = sql2o.open();
-
         String SQL_INSERT = "INSERT INTO manga(nombremanga, autormanga, categoriamanga, editorialmanga, idiomamanga, capitulomanga, numeropaginas, preciomanga)" + 
                             "VALUES(:nombre, :autor, :categoria, :editorial, :idioma, :capitulo, :paginas, :precio)";
 
@@ -109,9 +109,10 @@ public class MangaRepositoryImp implements MangaRepository {
     public void deleteMangaByName(String nombremanga){
         Connection conn = sql2o.open();
         String SQL_DELETE = "DELETE FROM manga WHERE manga.nombremanga = :nombremanga";
-
         try{
+            nombremanga = nombremanga.substring(0, nombremanga.length()-1);
             conn.createQuery(SQL_DELETE).addParameter("nombremanga", nombremanga).executeUpdate();
+            System.out.println(nombremanga);
 
         } catch(Exception e) {
             System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo borrar el manga\n");

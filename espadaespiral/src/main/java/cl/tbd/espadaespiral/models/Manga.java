@@ -19,9 +19,6 @@ public class Manga {
     private int preciomanga;
 
     //CONSTRUCTOR MANGA
-    public Manga (){
-
-    }
 
     public Manga (long id, String nombre, String autor, String categoria, String editorial, String idioma, int capitulo, int numeroPaginas, int precio){
         this.id = id;
