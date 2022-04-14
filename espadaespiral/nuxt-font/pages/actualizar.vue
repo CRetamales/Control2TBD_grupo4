@@ -5,9 +5,6 @@
         <a href="/update/id">
         <button type="button" class="main">Actualizar por ID</button>
         </a>
-        <a href="/update/name">
-        <button type="button" class="main">Actualizar por nombre</button>
-        </a>
     </div>
   </div>
 </template>

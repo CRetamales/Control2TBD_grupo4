@@ -5,9 +5,6 @@
         <a href="delete/id">
         <button type="button" class="main">Eliminar por ID</button>
         </a>
-        <a href="delete/name">
-        <button type="button" class="main">Eliminar por nombre</button>
-        </a>
     </div>
   </div>
 </template>

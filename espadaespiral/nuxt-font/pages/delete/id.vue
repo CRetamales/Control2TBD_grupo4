@@ -3,15 +3,15 @@
         <h1>Eliminar un Manga</h1>
         <form>
             <div class="form-item">
-                <label for="id">Id del Manga</label>
-                <input type="long" id="id" v-model="mangaDeleted.idManga">
+                <label for="mangaid">Id del Manga</label>
+                <input type="text" id="mangaid" v-model="newManga.mangaid">
             </div>
             <div>
-                <button type="button" @click="send" class="main">Eliminar</button>
+                <button type="button" @click="del" class="main">Eliminar</button>
             </div>
             <div class="info">
                 <h2>Objeto</h2>
-                <code>{{mangaDeleted}}</code>
+                <code>{{newManga}}</code>
                 <p class="message">
                     {{message}}
                 </p>
@@ -35,21 +35,21 @@ export default {
     data(){
         return{
             message:'',
-            mangaDeleted:{}
+            newManga:{}
         }
     },
     methods:{
-        send:async function(){
+        del:async function(){
             this.message = '';
+            const id = this.newManga.mangaid;
             //validaciones de formulario
             //envío de datos del formulario
             try {
-                var result = await this.$axios.delete('/manga/deleteById',this.mangaDeleted);
-                console.log('Hola');
+                var result = await this.$axios.delete(`/manga/deleteById/${this.newManga.mangaid}`,this.newManga);
                 console.log(result.data)
                 let manga = result.data;
                 //mensaje de exito
-                this.message = `Se elimino el Manga con id: ${manga.mangaid}`;
+                this.message = `Se elimino el Manga con id: ${id}`;
                 this.mangaDeleted = {};
             } catch (error) {
                 //mensaje de error

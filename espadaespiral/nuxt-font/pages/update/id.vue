@@ -69,7 +69,7 @@ export default {
                 console.log(result.data)
                 let manga = result.data;
                 //mensaje de exito
-                this.message = `Se actulizo el nuevo Manga con id: ${id}`;
+                this.message = `Se actulizo el nuevo Manga con id: ${manga.mangaid}`;
                 this.newManga = {};
             } catch (error) {
                 //mensaje de error

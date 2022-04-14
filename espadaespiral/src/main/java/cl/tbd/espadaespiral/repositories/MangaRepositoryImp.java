@@ -104,7 +104,7 @@ public class MangaRepositoryImp implements MangaRepository {
         }
     }
 
-    
+    /*
     @Override 
     public void deleteMangaByName(String nombremanga){
         Connection conn = sql2o.open();
@@ -117,7 +117,7 @@ public class MangaRepositoryImp implements MangaRepository {
         } catch(Exception e) {
             System.out.println(e.getMessage() + e.getLocalizedMessage() + "No se pudo borrar el manga\n");
         }
-    }
+    }*/
     
 
 

@@ -57,13 +57,13 @@ public class MangaService{
         return newManga;
     }
     
-
+    /*
     @PostMapping("/manga/deleteByName")
     @ResponseBody
     public String deleteManga(@RequestBody String nombreManga){
         mangaRepository.deleteMangaByName(nombreManga);
         return nombreManga;
-    }
+    }*/
 
 
     @RequestMapping(value = "/manga/deleteById/{id}", produces = "application/json", method = {RequestMethod.GET, RequestMethod.DELETE})
