@@ -12,7 +12,7 @@ public class DatabaseContext {
   public static Sql2o sql2o(){
     //Carlos,Bastian,Felipe,Carla,Estefania,Sora
     String[] usuarios = new String[] {"postgres", "postgres", "postgres","postgres","postgres","postgress","postgres"};
-    String[] contraseñas = new String[] {"default", "2701", "Fcii01000110","contra4","3144","contra6","Fcii5944"};
+    String[] contraseñas = new String[] {"default", "2701", "Fcii01000110","contra4","3144","contra6","abcdef1234"};
     int i;
 
     //Esto se debe cambiar acorde a la base de datos y las credenciales

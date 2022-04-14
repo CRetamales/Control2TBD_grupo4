@@ -2,64 +2,64 @@
   {
     "name": "acerca-de",
     "path": "/acerca-de",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\acerca-de.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\acerca-de.vue",
     "chunkName": "pages/acerca-de",
-    "_name": "_7641cfc5"
+    "_name": "_39616da8"
   },
   {
     "name": "actualizar",
     "path": "/actualizar",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\actualizar.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\actualizar.vue",
     "chunkName": "pages/actualizar",
-    "_name": "_4872d108"
+    "_name": "_7c9ab5f9"
   },
   {
     "name": "eliminar",
     "path": "/eliminar",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\eliminar.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\eliminar.vue",
     "chunkName": "pages/eliminar",
-    "_name": "_48ceba26"
+    "_name": "_02ec3caa"
   },
   {
     "name": "lista",
     "path": "/lista",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\lista.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\lista.vue",
     "chunkName": "pages/lista",
-    "_name": "_b6fd9a32"
+    "_name": "_78ed8b6c"
   },
   {
     "name": "nosotros",
     "path": "/nosotros",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nosotros.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nosotros.vue",
     "chunkName": "pages/nosotros",
-    "_name": "_15b6c0ea"
+    "_name": "_1c783948"
   },
   {
     "name": "nuevo",
     "path": "/nuevo",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nuevo.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\nuevo.vue",
     "chunkName": "pages/nuevo",
-    "_name": "_69a02fca"
+    "_name": "_2b902104"
   },
   {
     "name": "delete-id",
     "path": "/delete/id",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\delete\\\\id.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\delete\\\\id.vue",
     "chunkName": "pages/delete/id",
-    "_name": "_79994992"
+    "_name": "_1a6d680f"
   },
   {
     "name": "update-id",
     "path": "/update/id",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\update\\\\id.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\update\\\\id.vue",
     "chunkName": "pages/update/id",
-    "_name": "_27d4feb0"
+    "_name": "_6eadc5a6"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Carev\\\\Desktop\\\\7°Semestre\\\\TBD\\\\Entregas\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\centr\\\\Documents\\\\Git\\\\asdasdadsasd\\\\Control2TBD_grupo4\\\\espadaespiral\\\\nuxt-font\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_85708e94"
+    "_name": "_47607fce"
   }
 ]

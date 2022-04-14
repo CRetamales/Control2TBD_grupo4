@@ -4,15 +4,15 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _7641cfc5 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
-const _4872d108 = () => interopDefault(import('..\\pages\\actualizar.vue' /* webpackChunkName: "pages/actualizar" */))
-const _48ceba26 = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpackChunkName: "pages/eliminar" */))
-const _b6fd9a32 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
-const _15b6c0ea = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
-const _69a02fca = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
-const _79994992 = () => interopDefault(import('..\\pages\\delete\\id.vue' /* webpackChunkName: "pages/delete/id" */))
-const _27d4feb0 = () => interopDefault(import('..\\pages\\update\\id.vue' /* webpackChunkName: "pages/update/id" */))
-const _85708e94 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _39616da8 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
+const _7c9ab5f9 = () => interopDefault(import('..\\pages\\actualizar.vue' /* webpackChunkName: "pages/actualizar" */))
+const _02ec3caa = () => interopDefault(import('..\\pages\\eliminar.vue' /* webpackChunkName: "pages/eliminar" */))
+const _78ed8b6c = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
+const _1c783948 = () => interopDefault(import('..\\pages\\nosotros.vue' /* webpackChunkName: "pages/nosotros" */))
+const _2b902104 = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
+const _1a6d680f = () => interopDefault(import('..\\pages\\delete\\id.vue' /* webpackChunkName: "pages/delete/id" */))
+const _6eadc5a6 = () => interopDefault(import('..\\pages\\update\\id.vue' /* webpackChunkName: "pages/update/id" */))
+const _47607fce = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -27,39 +27,39 @@ export const routerOptions = {
 
   routes: [{
     path: "/acerca-de",
-    component: _7641cfc5,
+    component: _39616da8,
     name: "acerca-de"
   }, {
     path: "/actualizar",
-    component: _4872d108,
+    component: _7c9ab5f9,
     name: "actualizar"
   }, {
     path: "/eliminar",
-    component: _48ceba26,
+    component: _02ec3caa,
     name: "eliminar"
   }, {
     path: "/lista",
-    component: _b6fd9a32,
+    component: _78ed8b6c,
     name: "lista"
   }, {
     path: "/nosotros",
-    component: _15b6c0ea,
+    component: _1c783948,
     name: "nosotros"
   }, {
     path: "/nuevo",
-    component: _69a02fca,
+    component: _2b902104,
     name: "nuevo"
   }, {
     path: "/delete/id",
-    component: _79994992,
+    component: _1a6d680f,
     name: "delete-id"
   }, {
     path: "/update/id",
-    component: _27d4feb0,
+    component: _6eadc5a6,
     name: "update-id"
   }, {
     path: "/",
-    component: _85708e94,
+    component: _47607fce,
     name: "index"
   }],
 
